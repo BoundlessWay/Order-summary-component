@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+    --primary-Pale-blue: hsl(225, 100%, 94%);
+    --primary-Bright-blue: hsl(245, 75%, 52%);
+    --neutral-Very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-Desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 50;
+    height: 900px;
+    display: flex;
+    background-image: url(./Resources/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--primary-Pale-blue);
+}
+
+.Order-summary-component {
+    margin: auto;
+    width: 450px;
+    height: 700px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.OS-component__title {
+    text-align: center;
+    color: var(--neutral-Dark-blue);
+    margin-top: 54px;
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.OS-component__desc {
+    margin-top: 25px;
+    text-align: center;
+    color: var(--neutral-Desaturated-blue);
+}
+
+.OS-component__Plan {
+    height: 96px;
+    width: 354px;
+    background-color: var(--neutral-Very-pale-blue);
+    margin: auto;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.Plan__music-icon {
+    width: 48px;
+}
+
+.Plan__content {
+    margin-left: 20px;
+}
+
+.Plan__name {
+    color: var(--neutral-Dark-blue);
+    font-weight: 900;
+}
+
+.Plan__price {
+    color: var(--neutral-Desaturated-blue);
+    font-size: 1.7rem;
+}
+
+.Plan__change {
+    margin-left: 86px;
+    font-weight: 700;
+}
+
+.Plan__change:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.OS-component__btn {
+    display: block;
+    height: 50px;
+    background-color: var(--primary-Bright-blue);
+    color: white;
+    border: none;
+    margin: auto;
+    margin-top: 32px;
+    width: 354px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.OS-component__btn:hover {
+    opacity: 0.7;
+}
+
+.OS-component__cancel-OS {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 32px;
+    color: var(--neutral-Desaturated-blue);
+    cursor: pointer;
+}
