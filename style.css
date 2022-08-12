@@ -35,7 +35,12 @@ body {
     height: 700px;
     border-radius: 15px;
     background-color: white;
+}
+
+.OS-component__image {
     overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .OS-component__title {
